@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<!--https://www.anwita-arun.in/ -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Augusma J. Photography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.10.1/bootstrap-social.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-rfs/bootstrap-rfs.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" type="image/png" href="{% static 'favicon_package_v0/favicon-32x32.png' %}"/>
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta http-equiv="refresh" content="">
+  <style>
+    a:active, a:active, a:visited, a:link{
+      text-decoration: none;
+      color: black;}
+    .zoom{
+      padding: 50px;
+      transition: transform .4s; /* Animation */
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;}
+    .zoom:hover {
+      transform: scale(1.5) /* (150% zoom)*/;}
+
+
+  </style>
+  {% block head %}
+  {% endblock %}
+</head>
+
+<body style="scroll-behavior: smooth">
+  <div class="container-fluid">
+    <div class="Header">
+      <div class="jumbotron display-5 bg-white p-3 mb-2 text-center">
+        <h1 class="text-dark mb-5 mt-5">Augusma J. Photography</h1>
+      </div>
+      <nav class="text-center navbar navbar-expand-lg text-dark jumbotron navbar-light bg-light"><a href="index" class="zoom display-1 row-6">Creating Memories</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="display-3 navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="h2 navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link display-3" style="color:#ff33cc" href="portfolio" target="_blank">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link display-3" style="color:#ff33cc" href="about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link display-3" style="color:#ff33cc" href="contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    </div>
+{% block body %}
+{% endblock %}
+
+    <footer class="text-center text-white fixed-bottom" style="background-color: black;">
+      <div class="container pt-4">
+      <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-link btn-floating btn-lg btn btn-outline-primary text-light m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f fa-4x"></i></a>
+          <!-- Twitter -->
+          <a class="btn btn-link btn-floating btn-lg btn btn-outline-primary text-light m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter fa-4x"></i></a>
+          <!-- Instagram -->
+          <a class="btn btn-link btn-floating btn-lg btn btn-outline-primary text-light m-1" href="https://instagram.com/augusmajphotography?igshid=5bhelg1i1vwh" target="_blank" role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram fa-4x"></i></a>
+          <!-- Linkedin -->
+          <a class="btn btn-link btn-floating btn-lg btn btn-outline-primary text-light m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-linkedin fa-4x"></i></a>
+        </div>
+      <!-- Grid container -->
+      <!-- Copyright -->
+        <div class="text-center text-light p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2021 Copyright:
+          <a class="text-light" href="https://www.facebook.com/stevenson.gerard">Website Designed by Evolving Technologies</a>
+        </div>
+      <!-- Copyright -->
+      </footer>
+    {% block footer %}
+    {% endblock %}
+  </body>
+  <div class="space">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+  <div class="Javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </div>
+    {% block JS %}
+    {% endblock %}
